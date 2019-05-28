@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace BroadcastSample
 {
-    [BroadcastReceiver]
+    [BroadcastReceiver(Enabled = true)]
     [IntentFilter(new[] { "MyBroadcastReceiver" }, Categories = new[] { Intent.CategoryDefault })]
     public class MyBroadcastReceiver : BroadcastReceiver
     {
